@@ -34,9 +34,9 @@ def casefolding(text):
 
 # Memuat kunci normalisasi
 try:
-    key_norm = pd.read_csv('data/normalize.csv', encoding='latin1')
+    key_norm = pd.read_csv('data/normalize.csv', encoding='latin1', on_bad_lines='skip')
 except UnicodeDecodeError:
-    key_norm = pd.read_csv('data/normalize.csv', encoding='ISO-8859-1')
+    key_norm = pd.read_csv('data/normalize.csv', encoding='utf-8')
 
 def text_normalize(text):
     words = text.split()
