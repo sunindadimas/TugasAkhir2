@@ -15,7 +15,6 @@ import seaborn as sns
 from wordcloud import WordCloud
 from sklearn.metrics import confusion_matrix
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from googletrans import Translator
 from collections import defaultdict
 
 # Download NLTK stopwords
