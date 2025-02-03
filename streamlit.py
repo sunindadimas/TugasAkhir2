@@ -176,7 +176,7 @@ def vader_sentiment(text):
 
 # Sidebar untuk navigasi
 st.sidebar.title("Navigasi")
-options = st.sidebar.radio("Pergi ke", ["📊 Eksplorasi Data", "🔄 Preprocessing", "🔍 Prediksi", "📝 Kesimpulan"])
+options = st.sidebar.radio("Pergi ke", ["Eksplorasi Data", "Preprocessing", "Prediksi", "Kesimpulan"])
 
 # Menambahkan CSS untuk justify text dan margin pada informasi penulis
 st.markdown(
@@ -194,7 +194,7 @@ st.markdown(
 )
 
 # Halaman: Eksplorasi Data
-if options == "📊 Eksplorasi Data":
+if options == "Eksplorasi Data":
     st.header("Eksplorasi Data Analis")
     
     # Membaca data
@@ -280,7 +280,7 @@ if options == "📊 Eksplorasi Data":
     """, unsafe_allow_html=True) 
 
 # Halaman: Preprocessing
-elif options == "🔄 Preprocessing":
+elif options == "Preprocessing":
     st.header("Langkah Preprocessing")
     st.write("Unggah data Anda dan lakukan langkah-langkah preprocessing teks.")
 
@@ -440,7 +440,7 @@ elif options == "🔄 Preprocessing":
                     print("\n" + "-"*80 + "\n")
 
 # Halaman: Prediksi
-elif options == "🔍 Prediksi":
+elif options == "Prediksi":
     st.header("Klasifikasi Teks")
 
     user_input = st.text_area("Masukkan teks untuk klasifikasi:")
@@ -497,7 +497,7 @@ elif options == "🔍 Prediksi":
         st.write(svm_result)
 
 # Halaman: Kesimpulan
-elif options == "📝 Kesimpulan":
+elif options == "Kesimpulan":
     st.header("Kesimpulan")
 
     st.markdown("""
